@@ -55,7 +55,7 @@ class _BottomNavState extends State<BottomNav> {
     Ionicons.person_outline,
   ];
 
-  List bottomLabels = ["Home", "Category", "My Orders","My Cart","Profile"];
+  List bottomLabels = ["Home", "Category", "My Orders", "My Cart", "Profile"];
 
   @override
   Widget build(BuildContext context) {

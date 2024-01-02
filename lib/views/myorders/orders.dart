@@ -14,7 +14,7 @@ class _MyOrdersState extends State<MyOrders> {
       appBar: AppBar(
         title: Text("My Orders"),
       ),
-      body:  Center(
+      body: Center(
         child: Container(
           width: 260, // Set your desired width here
           child: Column(
@@ -27,17 +27,21 @@ class _MyOrdersState extends State<MyOrders> {
               SizedBox(
                 height: 20,
               ),
-              Text("We will Update Soon...",
+              Text(
+                "We will Update Soon...",
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, letterSpacing: 2,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
                     fontSize: 20),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text("Stay Tuned",
+              Text(
+                "Stay Tuned",
                 style: TextStyle(
-                    fontWeight: FontWeight.bold, letterSpacing: 2,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
                     fontSize: 18),
               ),
             ],

@@ -44,7 +44,7 @@ class FeaturedTile extends StatelessWidget {
                       color: Colors.white,
                     ),
                     height: 160,
-                    width: MediaQuery.of(context).size.width/2,
+                    width: MediaQuery.of(context).size.width / 2,
                   ),
                   Expanded(
                     child: Padding(
@@ -55,23 +55,18 @@ class FeaturedTile extends StatelessWidget {
                         children: [
                           Text(
                             itemName,
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.black
+                            style: TextStyle(fontSize: 12, color: Colors.black
                                 // Color(ColorT.textColor),
                                 ),
                           ),
-
                           SizedBox(
                             height: 20,
                           ),
                           Text(
                             price,
-                            style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.black
-                              // Color(ColorT.textColor),
-                            ),
+                            style: TextStyle(fontSize: 12, color: Colors.black
+                                // Color(ColorT.textColor),
+                                ),
                           ),
                           SizedBox(
                             height: 15,
@@ -81,9 +76,10 @@ class FeaturedTile extends StatelessWidget {
                             child: Text(
                               "Buy Now",
                               style: TextStyle(
-                                  letterSpacing: 2,
-                                  fontSize: 12,
-                                  color: Colors.white,),
+                                letterSpacing: 2,
+                                fontSize: 12,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ],

@@ -27,10 +27,10 @@ class _SignUpPageState extends State<SignUpPage> {
           width: double.infinity,
           height: MediaQuery.of(context).size.height / 1,
           decoration: BoxDecoration(
-            // image: DecorationImage(
-            //   image: AssetImage("assets/signupbg.png"), fit: BoxFit.cover
-            // )
-          ),
+              // image: DecorationImage(
+              //   image: AssetImage("assets/signupbg.png"), fit: BoxFit.cover
+              // )
+              ),
           child: Padding(
             padding: const EdgeInsets.all(25),
             child: Column(
@@ -39,9 +39,9 @@ class _SignUpPageState extends State<SignUpPage> {
               children: [
                 Center(
                     child: Image.asset(
-                      "assets/Logo.png",
-                      height: 150,
-                    )),
+                  "assets/Logo.png",
+                  height: 150,
+                )),
                 SizedBox(
                   height: 30,
                 ),
@@ -140,7 +140,6 @@ class _SignUpPageState extends State<SignUpPage> {
                   decoration: InputDecoration(
                     isDense: true,
                     labelText: "Postal code",
-
                   ),
                   textInputAction: TextInputAction.next,
                   validator: (value) {
@@ -166,7 +165,11 @@ class _SignUpPageState extends State<SignUpPage> {
                       backgroundColor: Color(ColorT.themeColor),
                       shadowColor: Colors.teal[300],
                     ),
-                    child: Text("Sign Up", style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    child: Text(
+                      "Sign Up",
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
                   ),
                 ),
                 SizedBox(

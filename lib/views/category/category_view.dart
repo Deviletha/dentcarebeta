@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 class CategoryView extends StatefulWidget {
   final String category;
+
   const CategoryView({super.key, required this.category});
 
   @override
@@ -10,8 +11,6 @@ class CategoryView extends StatefulWidget {
 }
 
 class _CategoryViewState extends State<CategoryView> {
-
-
   List<String> images = [
     "assets/pr1.png",
     "assets/pr2.png",
@@ -29,8 +28,7 @@ class _CategoryViewState extends State<CategoryView> {
       appBar: AppBar(
         title: Text(widget.category),
       ),
-      body:
-      GridView.builder(
+      body: GridView.builder(
         physics: ScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -47,10 +45,7 @@ class _CategoryViewState extends State<CategoryView> {
     return CategoryCardView(
       imagePath: images[index],
       categoryName: "Product Name",
-      onTap: () {
-
-      },
+      onTap: () {},
     );
   }
-
 }

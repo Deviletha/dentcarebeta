@@ -82,7 +82,6 @@ class ProductTile extends StatelessWidget {
                       SizedBox(
                         height: 8,
                       ),
-
                       Row(
                         children: [
                           Text(

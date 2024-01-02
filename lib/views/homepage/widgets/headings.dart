@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../../../Components/title_widget.dart';
-
 class TitleText extends StatelessWidget {
   final String heading;
   final String buttonText;
@@ -18,14 +16,26 @@ class TitleText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Heading(
-          text: heading,
+        SizedBox(
+          height: 25,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                heading,
+                style: TextStyle(fontSize: 17, color: Colors.black),
+              ),
+            ],
+          ),
         ),
         TextButton(
             onPressed: onPressed,
             child: Text(
               buttonText,
-              style: TextStyle(color: Colors.black, fontSize: 15, decoration: TextDecoration.underline),
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                  decoration: TextDecoration.underline),
             ))
       ],
     );

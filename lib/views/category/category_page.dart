@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'category_view.dart';
 
 class CategoryPage extends StatefulWidget {
-
   const CategoryPage({super.key});
 
   @override
@@ -75,9 +74,11 @@ class _CategoryPageState extends State<CategoryPage> {
       categoryName: categoryNames[index],
       onTap: () {
         Navigator.push(
-            context, MaterialPageRoute(builder: (context) => CategoryView(
-          category: categoryNames[index],
-        )));
+            context,
+            MaterialPageRoute(
+                builder: (context) => CategoryView(
+                      category: categoryNames[index],
+                    )));
       },
     );
   }

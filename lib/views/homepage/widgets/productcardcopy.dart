@@ -29,15 +29,14 @@ class ProductTileCopy extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 5),
       child: Container(
-        decoration:
-            BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.shade500,
-                    blurRadius: 1,
-                  ),
-                ],
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade500,
+              blurRadius: 1,
             ),
+          ],
+        ),
         child: InkWell(
           onTap: onTap,
           child: Column(

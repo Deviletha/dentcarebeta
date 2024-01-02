@@ -264,29 +264,6 @@ class _HomepageState extends State<Homepage> {
           ),
         ],
       ),
-
-      // body: Container(
-      //   decoration: BoxDecoration(
-      //     color: Colors.white,
-      //     image: DecorationImage(
-      //       image: AssetImage("assets/homepagebg.png"),
-      //       fit: BoxFit.fitWidth,
-      //       colorFilter: ColorFilter.mode(
-      //         Colors.black.withOpacity(1),
-      //         // Adjust the opacity for the blur effect
-      //         BlendMode.dstATop,
-      //       ),
-      //     ),
-      //   ),
-      //   child: BackdropFilter(
-      //     filter: ImageFilter.blur(sigmaX: 2.0, sigmaY: 2.0),
-      //     // Adjust the sigma values for blur intensity
-      //     child: Container(
-      //       decoration: BoxDecoration(color: Colors.white.withOpacity(0.0)),
-      //       // Add your other widgets here
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
