@@ -44,6 +44,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   google_fonts: ^6.1.0
   iconsax: ^0.0.8
+  fluttertoast: ^8.2.2
 
 dev_dependencies:
   flutter_test:

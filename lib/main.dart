@@ -32,7 +32,8 @@ ThemeData _buildTheme(brightness) {
         elevation: 0,
         centerTitle: false,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor: Color(ColorT.themeColor),
+          statusBarColor: Colors.transparent,
+          // Color(ColorT.themeColor),
           statusBarIconBrightness: Brightness.light,
           statusBarBrightness: Brightness.light,
         ),

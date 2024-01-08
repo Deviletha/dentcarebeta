@@ -73,42 +73,6 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        toolbarHeight: 70,
-        title: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
-            Text(
-              "Current Location",
-              style: TextStyle(
-                fontSize: 12,
-              ),
-            ),
-            Text(
-              "Kerala, India",
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-            ),
-          ],
-        ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                // Navigator.push(context,
-                //     MaterialPageRoute(builder: (context) => LoginPage()));
-              },
-              icon: Icon(Ionicons.notifications_outline, color: Colors.white
-                  // Color(ColorT.themeColor)
-                  )),
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CartPage()));
-              },
-              icon: Icon(Ionicons.bag_outline, color: Colors.white
-                  // Color(ColorT.themeColor)
-                  )),
-        ],
-      ),
       endDrawer: Drawer(
         child: Column(
           children: [
@@ -206,7 +170,7 @@ class _HomepageState extends State<Homepage> {
               decoration: BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
-                  image: AssetImage("assets/homepagebg.png"),
+                  image: AssetImage("assets/img.png"),
                   fit: BoxFit.fitWidth,
                   colorFilter: ColorFilter.mode(
                     Colors.black.withOpacity(1),
